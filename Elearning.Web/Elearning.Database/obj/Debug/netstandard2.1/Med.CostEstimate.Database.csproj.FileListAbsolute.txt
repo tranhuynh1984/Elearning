@@ -1,0 +1,10 @@
+D:\MEDCOM\Code\webdttc\Elearning.Web\Elearning.Database\bin\Debug\netstandard2.1\Elearning.Database.deps.json
+D:\MEDCOM\Code\webdttc\Elearning.Web\Elearning.Database\bin\Debug\netstandard2.1\Elearning.Database.dll
+D:\MEDCOM\Code\webdttc\Elearning.Web\Elearning.Database\bin\Debug\netstandard2.1\Elearning.Database.pdb
+D:\MEDCOM\Code\webdttc\Elearning.Web\Elearning.Database\obj\Debug\netstandard2.1\Elearning.Database.csproj.AssemblyReference.cache
+D:\MEDCOM\Code\webdttc\Elearning.Web\Elearning.Database\obj\Debug\netstandard2.1\Elearning.Database.GeneratedMSBuildEditorConfig.editorconfig
+D:\MEDCOM\Code\webdttc\Elearning.Web\Elearning.Database\obj\Debug\netstandard2.1\Elearning.Database.AssemblyInfoInputs.cache
+D:\MEDCOM\Code\webdttc\Elearning.Web\Elearning.Database\obj\Debug\netstandard2.1\Elearning.Database.AssemblyInfo.cs
+D:\MEDCOM\Code\webdttc\Elearning.Web\Elearning.Database\obj\Debug\netstandard2.1\Elearning.Database.csproj.CoreCompileInputs.cache
+D:\MEDCOM\Code\webdttc\Elearning.Web\Elearning.Database\obj\Debug\netstandard2.1\Elearning.Database.dll
+D:\MEDCOM\Code\webdttc\Elearning.Web\Elearning.Database\obj\Debug\netstandard2.1\Elearning.Database.pdb

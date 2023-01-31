@@ -1,0 +1,13 @@
+D:\Elearning\Elearning.Web\Elearning.Web\Elearning.Permissions\bin\Debug\netstandard2.1\Elearning.Permissions.deps.json
+D:\Elearning\Elearning.Web\Elearning.Web\Elearning.Permissions\bin\Debug\netstandard2.1\Elearning.Permissions.dll
+D:\Elearning\Elearning.Web\Elearning.Web\Elearning.Permissions\bin\Debug\netstandard2.1\Elearning.Permissions.pdb
+D:\Elearning\Elearning.Web\Elearning.Web\Elearning.Permissions\bin\Debug\netstandard2.1\Elearning.Database.dll
+D:\Elearning\Elearning.Web\Elearning.Web\Elearning.Permissions\bin\Debug\netstandard2.1\Elearning.Database.pdb
+D:\Elearning\Elearning.Web\Elearning.Web\Elearning.Permissions\obj\Debug\netstandard2.1\Elearning.Permissions.csproj.AssemblyReference.cache
+D:\Elearning\Elearning.Web\Elearning.Web\Elearning.Permissions\obj\Debug\netstandard2.1\Elearning.Permissions.GeneratedMSBuildEditorConfig.editorconfig
+D:\Elearning\Elearning.Web\Elearning.Web\Elearning.Permissions\obj\Debug\netstandard2.1\Elearning.Permissions.AssemblyInfoInputs.cache
+D:\Elearning\Elearning.Web\Elearning.Web\Elearning.Permissions\obj\Debug\netstandard2.1\Elearning.Permissions.AssemblyInfo.cs
+D:\Elearning\Elearning.Web\Elearning.Web\Elearning.Permissions\obj\Debug\netstandard2.1\Elearning.Permissions.csproj.CoreCompileInputs.cache
+D:\Elearning\Elearning.Web\Elearning.Web\Elearning.Permissions\obj\Debug\netstandard2.1\Elearning.Permissions.csproj.CopyComplete
+D:\Elearning\Elearning.Web\Elearning.Web\Elearning.Permissions\obj\Debug\netstandard2.1\Elearning.Permissions.dll
+D:\Elearning\Elearning.Web\Elearning.Web\Elearning.Permissions\obj\Debug\netstandard2.1\Elearning.Permissions.pdb

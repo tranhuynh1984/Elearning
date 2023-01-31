@@ -1,0 +1,152 @@
+﻿using Elearning.Core.Contracts;
+using Elearning.Core.Contracts.Actions;
+using Elearning.Core.Contracts.Actually;
+using Elearning.Core.Contracts.CashFollow;
+using Elearning.Core.Contracts.CostEstimate;
+using Elearning.Core.Contracts.CostEstimateItem;
+using Elearning.Core.Contracts.Dashboard;
+using Elearning.Core.Contracts.Department;
+using Elearning.Core.Contracts.Funtions;
+using Elearning.Core.Contracts.Groups;
+using Elearning.Core.Contracts.Investment;
+using Elearning.Core.Contracts.Notify;
+using Elearning.Core.Contracts.Payment;
+using Elearning.Core.Contracts.PdfLogs;
+using Elearning.Core.Contracts.Profit;
+using Elearning.Core.Contracts.Revenue;
+using Elearning.Core.Contracts.Statuses;
+using Elearning.Core.Contracts.Unit;
+using Elearning.Core.Contracts.User;
+using Elearning.Core.Contracts.DMPN;
+using Elearning.Core.Contracts.DMDV;
+using Elearning.Core.Contracts.DMHuyen;
+using Elearning.Core.Contracts.DM;
+using Elearning.Core.Contracts.DMBS_ChuyenKhoa;
+using Elearning.Core.Contracts.HDKCB;
+using Elearning.Core.Contracts.NhCP;
+using Elearning.Core.Contracts.LoaiDeXuat;
+using Elearning.Core.Contracts.Relationship;
+using Elearning.Core.Contracts.TBL_CTVGROUP;
+using Elearning.Core.Contracts.TBL_CTVGROUPSUB;
+using Elearning.Core.Contracts.TBL_CTVGROUPSUB1_DETAIL;
+using Elearning.Core.Contracts.TBL_CTVGROUPSUB2_DETAIL;
+using Elearning.Core.Contracts.ProfileCK;
+using Elearning.Core.Contracts.DeXuat;
+using Elearning.Core.Contracts.DeXuatChiTiet;
+using Elearning.Core.Data.Actions;
+using Elearning.Core.Data.Actually;
+using Elearning.Core.Data.CashFollow;
+using Elearning.Core.Data.CostEstimate;
+using Elearning.Core.Data.CostEstimateItem;
+using Elearning.Core.Data.Dashboard;
+using Elearning.Core.Data.Department;
+using Elearning.Core.Data.Function;
+using Elearning.Core.Data.Groups;
+using Elearning.Core.Data.InvestmentPlan;
+using Elearning.Core.Data.Notify;
+using Elearning.Core.Data.Payment;
+using Elearning.Core.Data.PdfLogsRepository;
+using Elearning.Core.Data.Profit;
+using Elearning.Core.Data.Revenue;
+using Elearning.Core.Data.Statuses;
+using Elearning.Core.Data.Supplier;
+using Elearning.Core.Data.Unit;
+using Elearning.Core.Data.DMPN;
+using Elearning.Core.Data.DMDV;
+using Elearning.Core.Data.DMHuyen;
+using Elearning.Core.Data.DM;
+using Elearning.Core.Data.DMBS_ChuyenKhoa;
+using Elearning.Core.Data.HDKCB;
+using Elearning.Core.Data.User;
+using Elearning.Infrastructure.Contracts;
+using Elearning.Web.Filters;
+using Microsoft.AspNetCore.Identity;
+using Microsoft.Extensions.Configuration;
+using Microsoft.Extensions.DependencyInjection;
+using Elearning.Core.Contracts.DMCP;
+using Elearning.Core.Data.DMCP;
+using Elearning.Core.Data.NhCP;
+using Elearning.Core.Data.LoaiDeXuat;
+using Elearning.Core.Data.Relationship;
+using Elearning.Core.Contracts.DMCTV;
+using Elearning.Core.Data.DMCTV;
+using Elearning.Core.Data.TBL_CTVGROUP;
+using Elearning.Core.Data.TBL_CTVGROUPSUB;
+using Elearning.Core.Data.TBL_CTVGROUPSUB1_DETAIL;
+using Elearning.Core.Data.TBL_CTVGROUPSUB2_DETAIL;
+using Elearning.Core.Data.ProfileCK;
+using Elearning.Core.Contracts.ProfileCKCP;
+using Elearning.Core.Data.ProfileCKCP;
+using Elearning.Core.Data.DeXuat;
+using Elearning.Core.Data.DeXuatChiTiet;
+using Elearning.Core.Data.DeXuatGhiChu;
+using Elearning.Core.Data.Process;
+using Elearning.Core.Contracts.Process;
+using Elearning.Core.Contracts.ProcessStep;
+using Elearning.Core.Data.ProcessStep;
+using Elearning.Core.Contracts.DeXuatGhiChu;
+using Elearning.Core.Data.DeXuatKhoaMaCTV;
+using Elearning.Core.Data.DeXuatLuanChuyenMa;
+using Elearning.Core.Contracts.DeXuatKhoaMaCTV;
+using Elearning.Core.Contracts.DeXuatLuanChuyenMa;
+using Elearning.Core.Contracts.GiaKCB;
+using Elearning.Core.Data.GiaKCB;
+
+namespace Elearning.Infrastructure.Installers
+{
+    public class RegisterContractMappings : IServiceRegistration
+    {
+        public void RegisterAppServices(IServiceCollection services, IConfiguration config)
+        {
+            services.AddScoped<ICostEstimateItemRepository, CostEstimateItemRepository>()
+                .AddScoped<IActionLogsRepository, ActionLogsRepository>()
+                .AddScoped<ISupplierRepository, SupplierRepository>()
+                .AddScoped<ICostStatusesRepository, CostStatusesRepository>()
+                .AddScoped<ICostEstimateItemLogsRepository, CostEstimateItemLogsRepository>()
+                .AddScoped<ICostEstimateRepository, CostEstimateRepository>()
+                .AddScoped<IActuallySpentRepository, ActuallySpentRepository>()
+                .AddScoped<ICostEstimateLogRepository, CostEstimateLogRepository>()
+                .AddScoped<ICashFollowRepository, CashFollowRepository>()
+                .AddScoped<IPaymentRepository, PaymentRepository>()
+                .AddScoped<IUnitRepository, UnitRepository>()
+                .AddScoped<IUserRepository, UserRepository>()
+                .AddScoped<IGroupsRepository, GroupsRepository>()
+                .AddScoped<ISecurityStampValidator, MedSecurityStampValidator>()
+                .AddScoped<IDepartmentRepository, DepartmentRepository>()
+                .AddScoped<IFunctionRepository, FunctionRepository>()
+                .AddScoped<IInvestmentPlanRepository, InvestmentPlanRepository>()
+                .AddScoped<IRevenuePlanRepository, RevenuePlanRepository>()
+                .AddScoped<IProfitPlanRepository, ProfitPlanRepository>()
+                .AddScoped<IPdfLogsRepository, PdfLogsRepository>()
+                .AddScoped<IDashboardRepository, DashboardRepository>()
+                .AddScoped<INotifyRepository, NotifyRepository>()
+                .AddScoped<IDMPNRepository, DMPNRepository>()
+                .AddScoped<IDMDVRepository, DMDVRepository>()
+                .AddScoped<IDMHuyenRepository, DMHuyenRepository>()
+                .AddScoped<IDMRepository, DMRepository>()
+                .AddScoped<IDMBS_ChuyenKhoaRepository, DMBS_ChuyenKhoaRepository>()
+                .AddScoped<IDMCPRepository, DMCPRepository>()
+                .AddScoped<IHDKCBRepository, HDKCBRepository>()
+                .AddScoped<INhCPRepository, NhCPRepository>()
+                .AddScoped<ILoaiDeXuatRepository, LoaiDeXuatRepository>()
+                .AddScoped<IRelationshipRepository, RelationshipRepository>()
+                .AddScoped<ITBL_CTVGROUPRepository, TBL_CTVGROUPRepository>()
+                .AddScoped<IDMCTVRepository, DMCTVRepository>()
+                .AddScoped<ITBL_CTVGROUPRepository, TBL_CTVGROUPRepository>()
+                .AddScoped<ITBL_CTVGROUPSUBRepository, TBL_CTVGROUPSUBRepository>()
+                .AddScoped<ITBL_CTVGROUPSUB1_DETAILRepository, TBL_CTVGROUPSUB1_DETAILRepository>()
+                .AddScoped<ITBL_CTVGROUPSUB2_DETAILRepository, TBL_CTVGROUPSUB2_DETAILRepository>()
+                .AddScoped<IProfileCKRepository, ProfileCKRepository>()
+                .AddScoped<IProfileCKCPRepository, ProfileCKCPRepository>()
+                .AddScoped<IDeXuatRepository, DeXuatRepository>()
+                .AddScoped<IDeXuatChiTietRepository, DeXuatChiTietRepository>()
+                .AddScoped<IDeXuatKhoaMaCTVRepository, DeXuatKhoaMaCTVRepository>()
+                .AddScoped<IDeXuatLuanChuyenMaRepository, DeXuatLuanChuyenMaRepository>()
+                .AddScoped<IDeXuatGhiChuRepository, DeXuatGhiChuRepository>()
+                .AddScoped<IProcessRepository, ProcessRepository>()
+                .AddScoped<IProcessStepRepository, ProcessStepRepository>()
+                .AddScoped<IGiaKCBRepository, GiaKCBRepository>()
+                ;
+        }
+    }
+}
